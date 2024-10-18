@@ -1,7 +1,7 @@
 package Day4.oop.inheri2;
 
-import day4.oop.inheritance.Car;
-import day4.oop.inheritance.HondaCar;
+import Day4.oop.inheritance.Car;
+import Day4.oop.inheritance.HondaCar;
 
 public class Main {
 

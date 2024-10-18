@@ -1,6 +1,6 @@
 package Day4.wrapperClass;
 
-import day4.baitap3.NhanVien;
+import Day4.baitap3.NhanVien;
 
 public class Main2 {
 

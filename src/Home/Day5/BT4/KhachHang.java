@@ -1,14 +1,15 @@
-package Day4.BT2;
+package Day5.BT4;
 
 import java.util.Scanner;
 
-public class KhachHang {
+public abstract class KhachHang {
       String maPassport;
       String hoTen;
       double tienCuoc;
 
      public KhachHang() {
      }
+
 
      public KhachHang(String maPassport, String hoTen, double tienCuoc) {
          this.maPassport = maPassport;
@@ -28,14 +29,14 @@ public class KhachHang {
          Scanner sc = new Scanner(System.in) ;
          System.out.println("Nhap thong tin khach hang:");
          System.out.println("PassPort : ");
-         maPassport = sc.next();
+         this.maPassport = sc.next();
          System.out.println("Ho Ten : ");
-         hoTen = sc.next();
+         this.hoTen = sc.next();
          System.out.println("Tien Cuoc");
-         tienCuoc =sc.nextDouble();
+         this.tienCuoc =sc.nextDouble();
                        }
     public  void xuat() {
-         toString();
+        System.out.println(this);
     }
 
     public String toString() {
@@ -46,7 +47,5 @@ public class KhachHang {
                 '}';
         }
 
-    public double tinhTienThang() {
-        return 0;
-    }
+    public abstract double tinhTienThang();
 }

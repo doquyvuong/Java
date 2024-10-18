@@ -1,4 +1,4 @@
-package Day4.BT2;
+package Day5.BT4;
 
 import java.util.Scanner;
 
@@ -18,18 +18,21 @@ public class ThanhVien extends KhachHang{
         super.nhap();
         Scanner sc = new Scanner(System.in);
         System.out.print("Nhap ti le thuong: ");
-        tiLeThuong = sc.nextDouble();
+        this.tiLeThuong = sc.nextDouble();
     }
 
     public void xuat() {
         super.xuat();
-        toString();
+        System.out.println(this);
     }
 
     @Override
     public String toString() {
-        return "ThanhVien{" +
-                "tiLeThuong=" + tiLeThuong +
+        return "Thanh vien{" +
+                "maPassport='" + maPassport + '\'' +
+                ", hoTen='" + hoTen + '\'' +
+                ", tienCuoc=" + tienCuoc +
+                "ti le thuong=" + tiLeThuong +
                 '}';
     }
 
