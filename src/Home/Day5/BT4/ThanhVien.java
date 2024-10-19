@@ -14,6 +14,7 @@ public class ThanhVien extends KhachHang{
         this.tiLeThuong = tiLeThuong;
     }
 
+    @Override
     public void nhap() {
         super.nhap();
         Scanner sc = new Scanner(System.in);
@@ -21,8 +22,8 @@ public class ThanhVien extends KhachHang{
         this.tiLeThuong = sc.nextDouble();
     }
 
+    @Override
     public void xuat() {
-        super.xuat();
         System.out.println(this);
     }
 
@@ -36,6 +37,7 @@ public class ThanhVien extends KhachHang{
                 '}';
     }
 
+    @Override
     public  double tinhTienThang() {
         return tienCuoc * tiLeThuong;
     }

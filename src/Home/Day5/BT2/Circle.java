@@ -11,7 +11,8 @@ public class Circle extends Point implements Shape {
     }
 
     public Circle(int x, int y, double radius, int color) {
-        super(x, y);
+        this.X = x;
+        this.Y = y;
         this.radius = radius;
         this.color = color;
     }
@@ -28,9 +29,10 @@ public class Circle extends Point implements Shape {
         return PI * radius * radius;
     }
 
-    @Override
-    public void move(int dx, int dy) {
-        super.move(dx, dy);
+
+    public void moveCircle(int dx, int dy) {
+        this.X += dx;
+        this.Y += dy;
     }
 
 

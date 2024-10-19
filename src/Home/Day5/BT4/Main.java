@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     KhachHang[] danhsachKH ;
-    int nextKH=0;
+    int nextKH = 0;
     int maxKH;
 
     public Main(int maxKH) {
@@ -21,7 +21,7 @@ public class Main {
     }
 
     public void displayAllKH() {
-        System.out.println("Danh sach nhac: ");
+        System.out.println("Danh sach khach hang: ");
         for(int i=0; i<nextKH; i++){
             System.out.println(danhsachKH[i]);
         }
@@ -33,7 +33,7 @@ public class Main {
         int chon;
         do {
             System.out.println("----- Menu -----");
-            System.out.println("1. Thêm khách thành viên    ");
+            System.out.println("1. Thêm khách thành viên");
             System.out.println("2. Thêm khách vãng lai");
             System.out.println("3. Hiển thị toàn bộ danh sách ( bao gồm tiền thắng cược )");
             System.out.println("4. Thoát chương trình");
@@ -52,7 +52,8 @@ public class Main {
                 case 3:
                     danhsachKH.displayAllKH();
                     break;
-                case 4: break;
+                case 4:
+                    System.out.println("Thoát chương trình"); break;
                 default:
                     System.out.println("---------Moi chon lai--------");
             }
