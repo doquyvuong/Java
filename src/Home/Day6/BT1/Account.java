@@ -5,14 +5,14 @@ public class Account {
     String accountNumber;
     int accountBalance;
 
-    // Default constructor
+
     public Account() {
-        this.customerName = "Không xác định";
+        this.customerName = "Unknown";
         this.accountNumber = "000000";
         this.accountBalance = 0;
     }
 
-    // Parametrized constructor
+
     public Account(String customerName, String accountNumber, int accountBalance) throws InsufficientFundsException {
         this.customerName = customerName;
         this.accountNumber = accountNumber;
